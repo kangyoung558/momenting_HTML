@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Serif KR', serif; */
+}
+ul>li{list-style: none;}
+a{
+    text-decoration: none;
+    color: black;
+}
+.wrap{
+    position: relative; 
+    width: 978px;
+    height: 1000px;
+    margin: 0 auto ;
+}
+/* 로고부분  */
+.logowrap{
+    background-color:#F5dF4D ;
+    width: 45%;
+    height: 660px;
+    float: left;
+    padding: 60px;
+}
+.logo {
+    border: 8px solid #939597;
+    display: inline-block ;
+    padding: 3px 80px 3px 5px;
+    font-size: 30px;
+}
+div .txt1{margin: 40px 0;}
+.text {margin: 60px 0;}
+.text .txt{display: inline-block;}
+.text .mom{font-size: 24px;}
+.logowrap .logo a:hover {
+    color: #B8A73A;
+}
+/* 로그인 부분 */
+.loginwrap{ 
+    width: 45%;
+    height: auto;
+    float: right;
+    margin: 48px 48px;
+} 
+.loginwrap .login{
+    width: 100%;
+    margin: 10px 0px;
+}
+.login-form{
+    border: 1px solid #939597;
+    margin: 15px 0;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    float: right;
+    box-shadow: 0 0 5px 0 #939597;
+}
+.login button{
+    background-color: #F5dF4D;
+    text-align: center;
+    width: 405px;
+    height: 40px;
+    margin: 12px 10px;
+    border-radius: 10px;
+    border: 0;
+}
+hr{
+    width: 400px;
+    margin: 12px 15px;
+}
+.caption{
+    margin: 10px 10px;
+    text-align: center;
+}
+.caption ul{list-style: none;}
+.caption ul li{
+    margin: 0 15px;
+    display: inline-block;
+}
+.caption ul li a {text-decoration: none; color: #939597;} 
+.caption ul li a:hover{color: #F5dF4D;}
+
+/* 회원가입 부분*/
+.title{
+    border: 8px solid #939597;
+    display: inline-block ;
+    padding: 3px 80px 3px 5px;
+    margin: 15px 47px;
+    font-size: 26px;
+    width: 45%;
+    box-shadow: 0px 0px 8px 0px #F5dF4D;
+}
+.joinwrap {
+    border: 1px solid #939597;
+    border-radius: 15px;
+    width: 45%;
+    height: auto;
+    float: right;
+    margin: 5px 48px;
+    box-shadow: 0px 0px 5px 0px #939597;
+    font-size: 13px;
+}
+.join-area{
+    display:inline-block;
+}
+.join-group label{
+    width: 405px;
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 13px;
+}
+.join-group input{
+    width: 405px;
+    margin: 5px 10px;
+    padding: 10px 4px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.birth input{
+    width: 120px;
+    margin: 0 10px 0 10px;
+}
+.gender{
+    margin: 5px 10px;
+}
+.gender label{
+    width: 30px;
+    margin: 5px 3px;
+}
+.gender input{
+    width: 10px;
+    margin: 0;
+    
+}
+.join-group button {
+    background-color: #F5dF4D;
+    text-align: center;
+    width: 192px;
+    height: 25px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    border: 0;
+}
+.join-group .btn1{
+    background-color: #939597;
+    color: #eee;
+}
+/* 비밀번호 찾기 부분 */
+
+.findpasswrap{
+    width: 45%;
+    height: auto;
+    float: right;
+    margin: 51px 48px;
+}
+.findpasswrap .pass {
+    width: 100%;
+    margin: 10px 0px;
+}
+.findpassform{
+    border: 1px solid #939597;
+    margin: 15px 0;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    float: right;
+    box-shadow: 0 0 5px 0 #939597;
+}
+.area label, input{
+    width: 405px;
+    padding: 10px;
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+
+}
+/* .area input {
+    width: 405px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 10px;
+    font-size: 13px;
+} */
+.findpass button{
+    background-color: #F5dF4D;
+    text-align: center;
+    width: 405px;
+    height: 40px;
+    margin: 15px 10px 20px;
+    border-radius: 10px;
+    border: 0;
+}
+/* 약관동의 부분 */
+.checkwrap {
+    width: 45%;
+    height: auto;
+    float: right;
+    margin: 48px 48px;
+}
+.checkwrap .check{
+    width: 100%;
+    margin: 10px 0px;
+}
+.check-form{
+    border: 1px solid #939597;
+    margin: 15px 0;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    float: right;
+    box-shadow: 0 0 5px 0 #939597;
+}
+.check-form .check-group label{
+    width: 240px;
+    display: inline-block;
+    margin: 15px 10px;
+    font-size: 13px;
+}
+.check-form .check-group input{
+    width: 50px;
+    margin: 15px 1px;
+    float: right;
+}
+.check-form .check-group textarea{
+    width: 93%;
+    padding: 5px;
+    margin: 10px 15px;
+}
+.check-group button{
+    background-color: #F5dF4D;
+    text-align: center;
+    width: 192px;
+    height: 25px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    border: 0;
+}
+.check-group .btn1{
+    background-color: #939597;
+    color: #eee;
+}

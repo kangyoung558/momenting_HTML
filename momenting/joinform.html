@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link href="css/indexstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="logowrap">
+            <div class="logo"><a href="index.html"> MomenTing.</a></div>
+            <div class="text txt1">Hope your moment be remembered<br> like eternity... </div>
+            <div class="text txt2">당신의 순간이 영원처럼<br> 기억되길 바라며...</div>
+            <div class="text txt3">
+                <p class="txt mom">순간</p>
+                <p class="txt">을</p> 
+                <p>기록하고, 공유하고,</p>
+                <p>보상받으세요.</p>
+            </div>
+        </div>    
+        <div class="title">MomenTing. Join</div>
+        <div class="joinwrap">
+            <div class="join-area">
+                <form action="" method="GET">
+                    <div class="join-group">
+                        <label for="email">이메일</label>
+                        <input type="text" name="email" id="email" placeholder="이메일을 입력해주세요" autofocus required> 
+                    </div>
+                    <div class="join-group">
+                        <label for="pw">비밀번호</label>
+                        <input type="password" name="pw" id="pw" placeholder="영문 소문자, 숫자, 특수문자를 조합해 8자 이상" required>
+                    </div>
+                    <div class="join-group">
+                        <label for="pw">비밀번호 확인</label>
+                        <input type="password" name="pw" id="pw" placeholder="비밀번호를 다시한번 입력해주세요" required>
+                    </div>   
+                    <div class="join-group">
+                        <label for="name">이름</label>
+                        <input type="text" name="name" id="name" placeholder="이름을 입력해주세요" required>
+                    </div>     
+                    <div class="join-group">
+                        <label for="tel">전화번호</label>
+                        <input type="tel" name="tel" id="tel" placeholder="전화번호를 입력해주세요" required>
+                    </div>   
+                    <div class="join-group">
+                        <label for="year">생년월일</label>
+                        <div class="birth">
+                            <input type="text" name="year" id="year" placeholder="년(4자)" required>
+                            <input type="text" name="month" id="month" placeholder="월" required>
+                            <input type="text" name="date" id="date" placeholder="일" required>
+                        </div>
+                    </div>      
+                    <div class="join-group gender">
+                        <label for="gender">성별</label>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">남</label>  
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">여</label>  
+                    </div>
+                    <div class="join-group">
+                        <button type="reset" class="btn1">다시작성</button>
+                        <button type="submit" onclick="
+                        var check = confirm('입력하신 정보로 가입 하시겠습니까?'); 
+                        if(check == true){
+                            alert('가입을 축하드립니다.');
+                            event.preventDefault();
+                            location.href = 'index.html' 
+                        }else if(check == false){
+                            alert('첫 이지로이동합니다.');
+                            event.preventDefault(); 
+                            location.href = 'index.html'
+                        }" class="btn2">가입하기</button>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

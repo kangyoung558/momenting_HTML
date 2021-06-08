@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>출금 신청</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="images/favicon.ico" >
+    <link href="css/mainstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header-wrap">
+                <div class="left-side">
+                    <a href="main.html">
+                        <div class="logo-area">
+                            MomenTing.
+                        </div>
+                    </a>
+                    <div class="search-area">
+                        <form action="search.html" method="GET">
+                            <input type="text" name="search" id="search" placeholder="#(해시태그)를 이용해 검색하세요">
+                            <button type="submit" class="srh-btn"><img src="images/loupe.png" alt="검색"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav-wrap">
+                    <nav class="nav">
+                        <ul>
+                            <li><a class="current" href="main.html"><img src="images/home.png" alt="홈"></a></li>
+                            <li><a href="calendar.html"><img src="images/calendar.png" alt="달력"></a></li>
+                            <li><a href="usersboard.html"><img src="images/users.png" alt="다른 사용자"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="side-wrap">
+                <div class="side-nav">
+                    <ul>
+                       <li><img src="images/user.png" alt="프로필">강영훈</li>
+                       <ul class="submenu">
+                           <li><a href="mypoint.html"><img src="images/favorites.png" alt="포인트">나의 포인트</a></li>
+                           <li><a href="profileupdate.html"><img src="images/settings.png" alt="프로필편집">프로필 편집</a></li>
+                           <li><a href="index.html"><img src="images/logout.png" alt="로그아웃" class="logout">로그아웃</a></li>
+                       </ul>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="passcheck.html"><img src="images/settings.png" alt="세팅">회원정보</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="main.html"><img src="images/hashtag.png" alt="모든순간">모든순간</a>
+                        </li>
+                    </ul>    
+                    <ul>
+                        <li>
+                            <a href="specialboard.html"><img src="images/star.png" alt="특별했던순간">특별했던 순간</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><img src="images/folder.png" alt="카테고리">카테고리</li>
+                        <ul class="submenu">
+                            <li><a href="monthlyboard.html">2021년 1월</a></li>
+                            <li><a href="monthlyboard2.html">2021년 2월</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div class="point-wrap">
+                <div class="title">
+                    <h1>출금신청</h1>
+                </div>
+                <div class="withdrawal-wrap">
+                    <form action="">
+                        <div class="area point">
+                            <label for="pt">출금할 포인트</label>
+                            <input type="number" name="pt" id="pt" placeholder="최소 30000point">
+                        </div>
+                        <div class="area bank">
+                            <label for="bank">입금받는 은행</label>
+                            <select name="bank" id="bank">
+                                <option value="nh">농협</option>
+                                <option value="ibk">기업</option>
+                                <option value="kb">국민</option>
+                                <option value="hana">하나</option>
+                                <option value="woo">우리</option>
+                                <option value="shin">신협</option>
+                                <option value="shinhan">신한</option>
+                            </select>
+                        </div>
+                        <div class="area account">
+                            <label for="account">계좌번호</label>
+                            <input type="number" name="account" id="account" placeholder="하이픈(-) 없이 입력하세요">
+                        </div>
+                        <div class="area txt">
+                            <p>※적립하신 포인트는 30000piont부터 출금신청이 가능합니다.</p>
+                            <p>※회원님의 계좌로 입금되는 시기는 본사의 심사를 거쳐 14일이내로 입금됩니다.</p>
+                            <p>※출금신청하신 계좌는 회원정보와 동일한 본인 명의의 계좌여야합니다.</p>
+                        </div>
+                        <div class="area btn">
+                        <a href="withdrawalform.html"><button type="submit"onclick="
+                            alert('출금신청 되었습니다.'); 
+                            event.preventDefault(); 
+                            location.href = 'main.html'">신청하기</button></a>
+                        </div>
+                    </form>
+                </div>   
+            </div>
+        </section>
+    </div>    
+</body>
+</html>

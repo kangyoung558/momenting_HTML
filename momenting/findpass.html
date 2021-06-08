@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <link href="css/indexstyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <div class="logowrap">
+            <div class="logo"><a href="index.html"> MomenTing.</a></div>
+            <div class="text txt1">Hope your moment be remembered<br> like eternity... </div>
+            <div class="text txt2">당신의 순간이 영원처럼<br> 기억되길 바라며...</div>
+            <div class="text txt3">
+                <p class="txt mom">순간</p>
+                <p class="txt">을</p> 
+                <p>기록하고, 공유하고,</p>
+                <p>보상받으세요.</p>
+            </div>
+        </div>
+        <div class="findpasswrap">
+            <div class="title pass">MomenTing. FindPassword</div>
+            <div class="findpassform">
+                <div class="find-pass"> 
+                    <form action="" method="GET">
+                        <div class="area">
+                            <label for="name">이름</label>
+                            <input type="text" name="name" id="name" required autofocus placeholder="이름을 입력해주세요">
+                        </div>
+                        <div class="area">
+                            <label for="email">이메일</label>
+                            <input type="email" name="email" id="email" required autofocus placeholder="email@gmail.com">
+                        </div>
+                        <div class="btn-area findpass">
+                            <button type="submit"onclick="
+                            alert('이메일로 임시비밀번호를 전송했습니다. 로그인후 비밀번호를 수정해 주세요.'); 
+                            event.preventDefault(); 
+                            location.href = 'index.html'" id="btn-login">임시비밀번호 전송</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
